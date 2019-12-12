@@ -9,7 +9,7 @@
 
 ## EMRToast.m
 
-```Swift
+```objective-c
 #import "EMRToast.h"
 #import "EMRToastTextCell.h"
 
@@ -114,7 +114,7 @@
 ```
 ## EMRToastTextCell.m
 
-```Swift
+```objective-c
 #import "EMRToastTextCell.h"
 
 @implementation EMRToastTextCell
@@ -137,7 +137,7 @@
 ## How to use a toast
 
 In `ViewController.m`
-```Swift
+```objective-c
 #import "ViewController.h"
 #import "EMRToast.h"
 @interface ViewController() {
