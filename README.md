@@ -133,3 +133,36 @@
 }
 @end
 ```
+
+## How to use a toast
+
+In `ViewController.m`
+```Swift
+#import "ViewController.h"
+#import "EMRToast.h"
+@interface ViewController() {
+    NSButton *showToastButton;
+}
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    showToastButton = [NSButton buttonWithTitle:@"ShowToast" target:self action:@selector(showToastAction)];
+    showToastButton.frame = CGRectMake(50, 200, 200, 50);
+    [self.view addSubview:showToastButton];
+    
+}
+
+- (void)showToastAction {
+    // one line
+    //[EMRToast Show:@"This is a toast!"];
+    
+    // multiple line
+    [EMRToast Show:@"The blatant disparity between software \n theory and practice befuddles many \n Computer Science students."];
+}
+
+
+@end
+```
